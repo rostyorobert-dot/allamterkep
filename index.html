@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ÁllamTérkép – Magyarország (2010–2026)</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="lib/chart.min.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>ÁllamTérkép</h1>
+  <div class="subtitle">
+    Magyarország (2010–2026)
+  </div>
+  <div class="subtitle">
+    Oktatási célú, ellenőrizhető adatokra épülő szemléltetés (ESA2010 / Eurostat).
+  </div>
+  <div class="subtitle subtitle-note">
+    Az oldalon található adatok nyilvánosan elérhető, internetes forrásokból
+    összegyűjtött adathalmazok rendszerezésével és szemléltetésével készültek.
+    Az oldal nem minősül hivatalos statisztikai közlésnek.
+    Az esetleges elírásokért, pontatlanságokért vagy adateltérésekért
+    felelősség nem vállalható.
+  </div>
+</header>
+
+<div class="controls">
+  <div class="control-row" id="groupButtons">
+    <strong>Főcsoport</strong>
+    <button class="metric-btn active" data-group="A">Az állam helyzete</button>
+    <button class="metric-btn" data-group="B">Árak és jövedelmek</button>
+    <button class="metric-btn" data-group="C">Munkaerőpiac</button>
+    <button class="metric-btn" data-group="D">Gazdasági teljesítmény</button>
+    <button class="metric-btn" data-group="E">Társadalmi újraelosztás</button>
+    <button class="metric-btn" data-group="F">Demográfia és humán háttér</button>
+  </div>
+
+  <div class="control-row" id="cycleRow">
+    <strong>Ciklus</strong>
+    <button class="metric-btn cycle-btn active" data-from="2010" data-to="2014">2010–2014</button>
+    <button class="metric-btn cycle-btn" data-from="2014" data-to="2018">2014–2018</button>
+    <button class="metric-btn cycle-btn" data-from="2018" data-to="2022">2018–2022</button>
+    <button class="metric-btn cycle-btn" data-from="2022" data-to="2026">2022–2026</button>
+
+    <span class="spacer"></span>
+
+    <strong>Időszak</strong>
+    <span>Év tól</span>
+    <select id="fromYear"></select>
+    <span>Év ig</span>
+    <select id="toYear"></select>
+  </div>
+</div>
+
+<div class="chart-container">
+  <div id="statusLine" class="status-line">
+    Időtáv: 2010–2026 · 2024 előzetes · 2025–2026 becsült
+  </div>
+  <canvas id="financeChart"></canvas>
+</div>
+
+<div class="table-container">
+  <div id="metricsTable"></div>
+</div>
+
+<section id="methodology">
+  <h2>Források és módszertan</h2>
+
+  <div class="methodology-block">
+    <h3>1. Általános elvek</h3>
+    <p>
+      Az oldal oktatási és szemléltető céllal készült ÁllamTérkép.
+      A megjelenített adatok nem minősülnek hivatalos statisztikai közlésnek,
+      és nem helyettesítik az Eurostat, a KSH vagy más hatóságok publikációit.
+    </p>
+    <p>
+      Az idősáv egységesen 2010–2026.
+      A 2025–2026-os értékek nem ESA2010 éves adatok,
+      hanem jelölt becslések és modellkivetítések.
+    </p>
+  </div>
+
+  <div class="methodology-block">
+    <h3>2. Az állam helyzete (bevétel, kiadás, egyenleg)</h3>
+    <p>
+      A 2010–2024 közötti adatok forrása az Eurostat ESA2010 adatbázisa
+      (<code>gov_10a_main</code>, S13 szektor).
+      A 2010–2014 közötti időszak visszavezetett (backcast) adatokat tartalmaz.
+    </p>
+    <p>
+      A 2025. évre vonatkozó értékek becsült, annualizált mutatók,
+      amelyek a rendelkezésre álló negyedéves államháztartási adatok
+      (<code>gov_10q_ggnfa</code>) és negyedéves GDP-adatok
+      (<code>namq_10_gdp</code>) alapján készültek,
+      historikus szezonális minták figyelembevételével.
+    </p>
+    <p>
+      A 2026. év trendalapú modellkivetítés,
+      amely nem tekinthető statisztikai adatnak vagy előrejelzésnek.
+    </p>
+  </div>
+
+  <div class="methodology-block">
+    <h3>3. Államadósság / GDP</h3>
+    <p>
+      A tényleges adatok forrása az Eurostat ESA2010 konszolidált bruttó államadósság
+      adatbázisa (<code>gov_10dd_edpt1</code>).
+    </p>
+    <p>
+      A 2025. év becsült értéke negyedéves adatok alapján,
+      a 2026. év pedig trendalapú modellkivetítéssel került meghatározásra.
+    </p>
+  </div>
+
+  <div class="methodology-block">
+    <h3>4. Árak és jövedelmek</h3>
+    <p>
+      Az inflációs mutatók forrása az Eurostat harmonizált fogyasztói árindex (HICP)
+      adatbázisa (2015 = 100).
+      A hazai infláció és az EU-s harmonizált infláció elkülönítetten kerül bemutatásra.
+    </p>
+    <p>
+      A lakásárindex reálértéken,
+      a reálkereset-index a nominális keresetek és az árindex viszonyából kerül meghatározásra.
+      A 2025–2026-os értékek becslések és trendalapú modellkivetítések.
+    </p>
+  </div>
+
+  <div class="methodology-block">
+    <h3>5. Munkaerőpiac</h3>
+    <p>
+      A foglalkoztatási ráta, a munkanélküliségi ráta,
+      az aktivitási ráta és a hosszú távú munkanélküliség
+      az Eurostat munkaerő-felmérésen (LFS) alapuló adatbázisaiból származnak,
+      kiegészítve a KSH publikációival.
+    </p>
+    <p>
+      A mutatók százalékos formában kerülnek bemutatásra.
+      A 2026. év adatai trendalapú modellkivetítések.
+    </p>
+  </div>
+
+  <div class="methodology-block">
+    <h3>6. Gazdasági teljesítmény</h3>
+    <p>
+      A gazdasági teljesítményt bemutató mutatók
+      (GDP növekedés, egy főre jutó GDP reálindex,
+      beruházási ráta, termelékenység)
+      az Eurostat nemzeti számlák (ESA2010) adatbázisán alapulnak.
+    </p>
+    <p>
+      A reálindexek bázisévhez viszonyított változásokat mutatnak.
+      A 2026. év értékei idősoros trendextrapoláción alapulnak.
+    </p>
+  </div>
+
+  <div class="methodology-block">
+    <h3>7. Társadalmi újraelosztás</h3>
+    <p>
+      A társadalmi újraelosztás mutatói
+      (szociális kiadások, nyugdíjkiadások,
+      egészségügyi kiadások, családtámogatások)
+      a GDP arányában kerülnek bemutatásra,
+      az Eurostat COFOG bontású kormányzati kiadási adatbázisa alapján.
+    </p>
+    <p>
+      A mutatók az újraelosztás mértékét szemléltetik,
+      nem minősítik annak hatékonyságát vagy társadalmi következményeit.
+    </p>
+  </div>
+
+  <div class="methodology-block">
+    <h3>8. Demográfia és humán háttér</h3>
+    <p>
+      A demográfiai és humán mutatók
+      (népességszám, termékenységi ráta,
+      várható élettartam, időskori eltartottsági ráta)
+      az Eurostat demográfiai adatbázisaiból,
+      valamint a KSH adataiból származnak.
+    </p>
+    <p>
+      A 2026. évi értékek demográfiai trendek egyszerű extrapolációján alapulnak,
+      nem minősülnek hivatalos népesség-előreszámításnak.
+    </p>
+  </div>
+
+  <div class="methodology-block">
+    <h3>9. Felelősségkizárás</h3>
+    <p>
+      Az oldalon található tartalom nyilvánosan elérhető, internetes forrásokból
+      összegyűjtött adathalmazok rendszerezésével és feldolgozásával készült.
+      Az oldal nem minősül hivatalos adatforrásnak.
+    </p>
+    <p>
+      Az esetleges elírásokért, pontatlanságokért, adatfrissítésekből fakadó eltérésekért,
+      valamint az adatok felhasználásából eredő közvetlen vagy közvetett következményekért
+      semmilyen felelősség nem vállalható.
+    </p>
+    <p>
+      Az oldal tartalma nem tekinthető jogi, pénzügyi, gazdasági
+      vagy szakpolitikai tanácsnak.
+    </p>
+  </div>
+
+  <div class="methodology-note">
+    Az oldal oktatási célú, politikai vagy szakpolitikai állásfoglalást nem tartalmaz.
+  </div>
+</section>
+
+<footer>
+  © ÁllamTérkép – oktatási szemléltetés
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
