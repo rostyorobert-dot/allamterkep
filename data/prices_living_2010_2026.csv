@@ -1,0 +1,18 @@
+year,cpi_yoy_pct,hicp_yoy_pct,real_housing_price_index,real_wage_index,status,notes,source
+2010,4.9,4.7,92.0,97.0,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2011,3.9,3.8,90.5,96.0,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2012,5.7,5.7,89.0,94.5,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2013,1.7,1.7,88.0,95.0,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2014,-0.2,-0.1,89.5,96.5,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2015,-0.1,-0.1,92.0,99.0,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2016,0.4,0.4,95.5,101.5,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2017,2.4,2.4,101.0,104.5,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2018,2.8,2.9,107.5,106.5,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2019,3.4,3.4,114.0,108.0,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2020,3.3,3.4,118.0,108.5,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2021,5.1,5.2,123.0,107.0,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2022,14.5,15.3,121.0,98.0,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2023,17.6,17.0,116.0,95.5,actual,,KSH STADAT; Eurostat HICP; MNB; KSH
+2024,3.7,3.6,114.0,97.5,actual,előzetes,KSH STADAT; Eurostat HICP; MNB; KSH
+2025,4.5,4.3,115.0,99.0,estimated,annualized from monthly/quarterly data,KSH STADAT; Eurostat HICP; MNB; KSH
+2026,3.5,3.3,116.5,101.0,model,trend-based projection,KSH STADAT; Eurostat HICP; MNB; KSH

@@ -1,0 +1,18 @@
+year,gdp_growth_pct,gdp_per_capita_real_index,investment_rate_pct,productivity_real_index,status,notes,source
+2010,0.7,87.5,20.5,88.0,actual,,Eurostat National Accounts; KSH
+2011,1.8,89.0,21.2,89.5,actual,,Eurostat National Accounts; KSH
+2012,-1.6,88.3,20.0,88.9,actual,,Eurostat National Accounts; KSH
+2013,2.1,90.2,21.4,90.6,actual,,Eurostat National Accounts; KSH
+2014,4.2,93.8,23.0,94.0,actual,,Eurostat National Accounts; KSH
+2015,3.8,100.0,23.5,100.0,actual,bázisév (2015=100),Eurostat National Accounts; KSH
+2016,2.3,102.4,24.0,102.8,actual,,Eurostat National Accounts; KSH
+2017,4.3,106.5,25.3,106.9,actual,,Eurostat National Accounts; KSH
+2018,5.4,111.8,26.7,112.3,actual,,Eurostat National Accounts; KSH
+2019,4.9,116.9,27.5,117.6,actual,,Eurostat National Accounts; KSH
+2020,-4.5,112.1,26.0,113.0,actual,,Eurostat National Accounts; KSH
+2021,7.1,119.2,27.2,120.1,actual,,Eurostat National Accounts; KSH
+2022,4.6,122.8,28.1,123.6,actual,,Eurostat National Accounts; KSH
+2023,-0.8,121.5,26.4,122.2,actual,,Eurostat National Accounts; KSH
+2024,1.2,123.0,26.8,123.8,actual,előzetes,Eurostat National Accounts; KSH
+2025,2.0,125.0,27.0,125.5,estimated,annualized from quarterly data,Eurostat National Accounts
+2026,2.2,127.0,27.2,127.5,model,trend-based projection,Eurostat National Accounts

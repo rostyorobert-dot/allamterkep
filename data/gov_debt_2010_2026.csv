@@ -1,0 +1,18 @@
+year,debt_gdp_pct,status,notes,source
+2010,80.2,actual,ESA2010 backcast; break in series,Eurostat gov_10dd_edpt1
+2011,80.8,actual,ESA2010 backcast; break in series,Eurostat gov_10dd_edpt1
+2012,78.4,actual,ESA2010 backcast; break in series,Eurostat gov_10dd_edpt1
+2013,77.1,actual,ESA2010 backcast; break in series,Eurostat gov_10dd_edpt1
+2014,75.7,actual,ESA2010 backcast; break in series,Eurostat gov_10dd_edpt1
+2015,74.7,actual,ESA2010 consistent series,Eurostat gov_10dd_edpt1
+2016,74.1,actual,ESA2010 consistent series,Eurostat gov_10dd_edpt1
+2017,72.9,actual,ESA2010 consistent series,Eurostat gov_10dd_edpt1
+2018,70.8,actual,ESA2010 consistent series,Eurostat gov_10dd_edpt1
+2019,66.3,actual,ESA2010 consistent series,Eurostat gov_10dd_edpt1
+2020,80.4,actual,ESA2010 consistent series (COVID impact),Eurostat gov_10dd_edpt1
+2021,76.8,actual,ESA2010 consistent series,Eurostat gov_10dd_edpt1
+2022,73.9,actual,ESA2010 consistent series,Eurostat gov_10dd_edpt1
+2023,73.5,actual,ESA2010 consistent series,Eurostat gov_10dd_edpt1
+2024,73.2,provisional,Latest available annual data,Eurostat gov_10dd_edpt1
+2025,72.5,estimated_q,Estimate based on quarterly debt data and nominal GDP trajectory,Eurostat gov_10q_ggdebt + namq_10_gdp
+2026,71.8,model_projection,Trend-based projection aligned with fiscal path,Model projection (educational)

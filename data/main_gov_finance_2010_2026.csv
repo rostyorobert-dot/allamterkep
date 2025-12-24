@@ -1,0 +1,18 @@
+year,revenue_gdp_pct,expenditure_gdp_pct,balance_gdp_pct,status,notes,source
+2010,44.5,48.9,-4.4,actual,ESA2010 backcast; break in series,Eurostat gov_10a_main
+2011,43.9,49.1,-5.2,actual,ESA2010 backcast; break in series,Eurostat gov_10a_main
+2012,46.9,49.2,-2.3,actual,ESA2010 backcast; break in series,Eurostat gov_10a_main
+2013,47.5,50.1,-2.6,actual,ESA2010 backcast; break in series,Eurostat gov_10a_main
+2014,47.2,50.0,-2.8,actual,ESA2010 backcast; break in series,Eurostat gov_10a_main
+2015,48.4,50.4,-2.0,actual,ESA2010 consistent series,Eurostat gov_10a_main
+2016,44.9,46.7,-1.8,actual,ESA2010 consistent series,Eurostat gov_10a_main
+2017,44.2,46.6,-2.4,actual,ESA2010 consistent series,Eurostat gov_10a_main
+2018,43.9,45.9,-2.0,actual,ESA2010 consistent series,Eurostat gov_10a_main
+2019,43.8,45.8,-2.0,actual,ESA2010 consistent series,Eurostat gov_10a_main
+2020,43.5,51.0,-7.5,actual,ESA2010 consistent series,Eurostat gov_10a_main
+2021,41.0,48.1,-7.1,actual,ESA2010 consistent series,Eurostat gov_10a_main
+2022,42.8,49.0,-6.2,actual,ESA2010 consistent series,Eurostat gov_10a_main
+2023,42.7,49.5,-6.8,actual,ESA2010 consistent series,Eurostat gov_10a_main
+2024,42.1,47.1,-5.0,provisional,Latest available annual data,Eurostat gov_10a_main
+2025,42.4,47.6,-5.2,estimated_q,Annualised estimate from Q1–Q3 quarterly data + historical Q4 ratio,Eurostat gov_10q_ggnfa + namq_10_gdp
+2026,42.6,47.0,-4.4,model_projection,Trend-based projection using 2019–2025 trajectory and fiscal targets,Model projection (educational)

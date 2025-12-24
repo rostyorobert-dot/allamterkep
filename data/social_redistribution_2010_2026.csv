@@ -1,0 +1,18 @@
+year,social_expenditure_pct,pension_expenditure_pct,health_expenditure_pct,family_benefits_pct,status,notes,source
+2010,18.6,9.8,4.8,2.4,actual,,Eurostat COFOG gov_10a_exp; KSH
+2011,18.3,9.7,4.7,2.3,actual,,Eurostat COFOG gov_10a_exp; KSH
+2012,18.9,10.1,4.8,2.4,actual,,Eurostat COFOG gov_10a_exp; KSH
+2013,18.7,10.0,4.7,2.3,actual,,Eurostat COFOG gov_10a_exp; KSH
+2014,18.4,9.9,4.6,2.2,actual,,Eurostat COFOG gov_10a_exp; KSH
+2015,18.2,9.8,4.6,2.1,actual,,Eurostat COFOG gov_10a_exp; KSH
+2016,18.0,9.6,4.5,2.1,actual,,Eurostat COFOG gov_10a_exp; KSH
+2017,17.7,9.4,4.5,2.0,actual,,Eurostat COFOG gov_10a_exp; KSH
+2018,17.4,9.3,4.4,1.9,actual,,Eurostat COFOG gov_10a_exp; KSH
+2019,17.6,9.4,4.5,2.0,actual,,Eurostat COFOG gov_10a_exp; KSH
+2020,20.2,10.3,5.2,2.5,actual,,Eurostat COFOG gov_10a_exp; KSH
+2021,19.4,10.1,5.0,2.4,actual,,Eurostat COFOG gov_10a_exp; KSH
+2022,18.9,10.0,4.9,2.3,actual,,Eurostat COFOG gov_10a_exp; KSH
+2023,18.5,9.9,4.8,2.2,actual,,Eurostat COFOG gov_10a_exp; KSH
+2024,18.3,9.8,4.8,2.2,actual,előzetes,Eurostat COFOG gov_10a_exp; KSH
+2025,18.4,9.9,4.8,2.2,estimated,annualized from partial-year data,Eurostat COFOG
+2026,18.5,10.0,4.9,2.3,model,trend-based projection,Eurostat COFOG
